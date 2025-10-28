@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mike Tang — Web Day 1</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      text-align: center;
+      padding: 40px;
+    }
+    h1, h2, h3 { margin-bottom: 0.5em; }
+    a.btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: 1px solid #222;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #222;
+    }
+    a.btn:hover {
+      background: #222;
+      color: white;
+    }
+    ul { text-align: left; display: inline-block; margin-top: 1em; }
+    footer { color: #666; font-size: 0.9rem; margin-top: 40px; }
+    img { max-width: 80%; border-radius: 12px; margin-top: 20px; }
+  </style>
 </head>
 <body>
-    <h1>Mike's Website</h1>
+  <h1>Mike Tang</h1>
+  <h2>I make my stuff</h2>
+  <h3>Web Day 1 — Simple Page</h3>
+
+  <p>
+    I'm Mike, a Berklee composition major and creative coding minor who use Instruments sounds with electronic textures.
+    I spend most of my time exploring SuperCollider, Max/MSP, and strange tools like Hi-C for making graphical scores.
+    I like blending technology and sound — especially the kind of stuff you hear in
+    <strong>"Everything at the End of Time"</strong>.<br><br>
+    I also love playing Battlefield 6 <strong>right now </strong>when I'm not making sounds.
+  </p>
+
+  <h2>Everything at the End of Time</h2>
+  <img src="EATEOT6.jpg" alt="Everything at the End of Time cover image" />
+
+  <h2>Things I Like</h2>
+  <ul>
+    <li>Spitfire Audio — Fractured Strings</li>
+    <li>Orchestral Tools — Berlin Orchestra Inspire</li>
+    <li>ProjectSAM — Symphobia</li>
+    <li>Native Instruments — Fables</li>
+    <li>Audio Imperia — Nucleus</li>
+    <li>"Everything at the End of Time" by The Caretaker</li>
+  </ul>
+
+  <h2>Tools I Use</h2>
+  <ul>
+    <li><a href="https://supercollider.github.io/" target="_blank" rel="noopener">SuperCollider</a></li>
+    <li><a href="https://cycling74.com/products/max" target="_blank" rel="noopener">Max/MSP</a></li>
+    <li><a href="https://highc.org/" target="_blank" rel="noopener">HighC</a></li>
+  </ul>
+
+  <h2>My SoundCloud</h2>
+  <p>Click below to check out my tracks:</p>
+
+  <a class="btn" href="https://on.soundcloud.com/jBlR8vByaEdzNBn3W2" target="_blank" rel="noopener">Visit my SoundCloud</a>
+
+  <footer>
+    © <span id="y"></span> Mike Tang
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
