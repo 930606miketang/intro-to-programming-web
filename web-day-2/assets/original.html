@@ -10,31 +10,36 @@
       font-family: "Helvetica Neue", Arial, sans-serif;
       margin: 40px;
       color: #111;
-      background-color: #fafafa;
+      background-color: #fff;
       line-height: 1.6;
     }
 
     h1 {
-      border-bottom: 3px solid black;
-      padding-bottom: 6px;
-      margin-bottom: 15px;
+      /* 移除下方橫線 */
+      margin-bottom: 10px;
       font-size: 1.8em;
-      letter-spacing: 0.5px;
     }
 
     h2 {
       font-size: 1.3em;
       margin-top: 25px;
-      color: #333;
+      margin-bottom: 5px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #aaa;
+      margin: 8px 0 16px 0;
     }
 
     ul {
-      list-style-type: square; /* 不同的點樣式 */
+      list-style-type: circle; /* 點不太明顯 */
       padding-left: 25px;
+      margin-top: 5px;
     }
 
     a {
-      color: #0066cc; /* 藍色可以不同 */
+      color: #0066cc;
       text-decoration: none;
     }
 
@@ -44,7 +49,7 @@
     }
 
     code {
-      background-color: #eaeaea;
+      background-color: #f4f4f4;
       padding: 2px 5px;
       border-radius: 4px;
       font-size: 0.95em;
@@ -57,32 +62,44 @@
 
   <h2>What is HTML for?</h2>
   <p>
-    HTML defines the structure of a webpage.  
-    CSS manages the appearance and layout.
+    HTML defines the structure of a webpage.<br>
+    CSS handles all presentation and style.
   </p>
+  <hr>
 
   <h2>Tags we used last week</h2>
   <ul>
-    <li>&lt;h1&gt; through &lt;h6&gt;</li>
-    <li>&lt;p&gt; paragraph</li>
-    <li>&lt;br&gt; line break</li>
-    <li>&lt;b&gt; bold</li>
-    <li>&lt;i&gt; italic</li>
-    <li>&lt;ul&gt; unordered list</li>
-    <li>&lt;li&gt; list item</li>
+    <li>Title</li>
+    <li>H1 – H6</li>
+    <li>Paragraph</li>
+    <li>Bold</li>
+    <li>Emphasize</li>
+    <li>Horizontal Line</li>
+    <li>Break</li>
+    <li>Button</li>
+    <li>List
+      <ul>
+        <li>Unordered List</li>
+        <li>Ordered List</li>
+      </ul>
+    </li>
+    <li>Anchor</li>
+    <li>Image</li>
   </ul>
+  <hr>
 
   <h2>Attributes</h2>
   <p>
-    Attributes are added <em>inside</em> the opening tag to give extra information.
+    Attributes are special words inside the opening tag of an element that provide extra information.
   </p>
 
+  <!-- 移除這裡的橫線 -->
   <h2>Example: The Anchor Tag</h2>
   <p>
-    The anchor tag creates a hyperlink:
+    The tag is used to create hyperlinks. The most common attribute is <code>href</code>, which indicates the destination URL.
   </p>
-
   <code>&lt;a href="https://www.example.com"&gt;Go to EXAMPLE site&lt;/a&gt;</code>
+  <hr>
 
   <h2>Using CSS in three different ways:</h2>
   <ul>
