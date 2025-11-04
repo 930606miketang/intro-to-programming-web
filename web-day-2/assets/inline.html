@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundamentals: HTML & CSS</title>
+
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 40px;
+      color: #111;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    h1 {
+      /* 移除下方橫線 */
+      margin-bottom: 10px;
+      font-size: 1.8em;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      margin-top: 25px;
+      margin-bottom: 5px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #aaa;
+      margin: 8px 0 16px 0;
+    }
+
+    ul {
+      list-style-type: circle; /* 點不太明顯 */
+      padding-left: 25px;
+      margin-top: 5px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: black;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>HTML Fundamentals</h1>
+
+  <h2>What is HTML for?</h2>
+  <p>
+    HTML defines the structure of a webpage.<br>
+    CSS handles all presentation and style.
+  </p>
+  <hr>
+
+  <h2>Tags we used last week</h2>
+  <ul>
+    <li>Title</li>
+    <li>H1 – H6</li>
+    <li>Paragraph</li>
+    <li>Bold</li>
+    <li>Emphasize</li>
+    <li>Horizontal Line</li>
+    <li>Break</li>
+    <li>Button</li>
+    <li>List
+      <ul>
+        <li>Unordered List</li>
+        <li>Ordered List</li>
+      </ul>
+    </li>
+    <li>Anchor</li>
+    <li>Image</li>
+  </ul>
+  <hr>
+
+  <h2>Attributes</h2>
+  <p>
+    Attributes are special words inside the opening tag of an element that provide extra information.
+  </p>
+
+  <!-- 移除這裡的橫線 -->
+  <h2>Example: The Anchor Tag</h2>
+  <p>
+    The tag is used to create hyperlinks. The most common attribute is <code>href</code>, which indicates the destination URL.
+  </p>
+  <code>&lt;a href="https://www.example.com"&gt;Go to EXAMPLE site&lt;/a&gt;</code>
+  <hr>
+
+  <h2>Using CSS in three different ways:</h2>
+  <ul>
+    <li>Inline CSS</li>
+    <li>Internal CSS</li>
+    <li>External CSS</li>
+  </ul>
+</body>
+</html>
