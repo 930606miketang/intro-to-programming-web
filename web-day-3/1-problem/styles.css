@@ -1,0 +1,17 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    color: red;
+}
+
+ol{
+    line-height: 2;
+    padding-left: 100px;
+}
+
+h2 p{
+    border: red solid 2px;
+    background-color: lightblue;
+}

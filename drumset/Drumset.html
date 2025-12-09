@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        img {
+            width: 120px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <img src="images/crash.png" onclick="playSound('crash')">
+        <img src="images/tom1.png" onclick="playSound('tom-1')">
+        <img src="images/tom2.png" onclick="playSound('tom-2')">
+        <img src="images/tom3.png" onclick="playSound('tom-3')">
+        <img src="images/tom4.png" onclick="playSound('tom-4')">
+        <img src="images/snare.png" onclick="playSound('snare')">
+        <img src="images/kick.png" onclick="playSound('kick-bass')">
+    </div>
+
+    <script>
+        function playSound(name) {
+            const audio = new Audio(`sounds/${name}.mp3`);
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
+
