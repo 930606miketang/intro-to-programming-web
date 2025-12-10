@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: •#f4f4f9;
+    background-color: #f4f4f9;
 }
 
 h1 {
@@ -17,8 +17,8 @@ h1 {
     padding: 20px 40px;
     font-size: 24px;
     cursor: pointer;
-    background-color: •#007bff;
-    color: •white;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 5px;
     margin: 20px 0;
@@ -27,5 +27,5 @@ h1 {
 
 
 #tapButton:hover {
-    background-color: •#0056b3;
+    background-color: #0056b3;
 }
